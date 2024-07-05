@@ -1,6 +1,6 @@
 # StyleSwin-ADA
 
-This repo is the official implementation of "[Training swin transformer-based GAN for high-resolution blood cell imaging with limited data]"
+This repo is the official implementation of "Training swin transformer-based GAN for high-resolution blood cell imaging with limited data". 
 
 # StyleSwin
 
