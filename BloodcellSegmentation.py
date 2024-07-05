@@ -1,4 +1,3 @@
-# @title
 import cv2
 import numpy as np
 import os
@@ -46,7 +45,7 @@ def segment_main_cell(image_path, output_size=(256, 256)):
     # Mark the region of unknown with zero
     markers[unknown == 255] = 0
     
-    # Watershed algorithm
+    # Watershed algorithm with removed markers
     markers = cv2.watershed(image, markers)
     image[markers == 0] = [255, 0, 0]
 
@@ -65,7 +64,7 @@ def segment_main_cell(image_path, output_size=(256, 256)):
 folder_path = args.folder_path
 save_path = args.save_path
 
-# Ensure the save path exists
+# Check the save path exists
 if not os.path.exists(save_path):
     os.makedirs(save_path)
 
@@ -75,7 +74,7 @@ for filename in os.listdir(folder_path):
         image_path = os.path.join(folder_path, filename)
         main_cell = segment_main_cell(image_path)
 
-        # Save the main cell with the same name as the original image
+        # Save the main cell without marker
         cell_filename = f"{os.path.splitext(filename)[0]}_main_cell.jpg"
         cell_path = os.path.join(save_path, cell_filename)
         cv2.imwrite(cell_path, main_cell)
