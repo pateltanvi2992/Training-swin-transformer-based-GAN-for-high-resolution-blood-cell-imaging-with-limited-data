@@ -1,5 +1,7 @@
 # StyleSwin-ADA
 
+This repo is the official implementation of "[Training swin transformer-based GAN for high-resolution blood cell imaging with limited data]"
+
 # StyleSwin
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/styleswin-transformer-based-gan-for-high-1/image-generation-on-celeba-hq-1024x1024)](https://paperswithcode.com/sota/image-generation-on-celeba-hq-1024x1024?p=styleswin-transformer-based-gan-for-high-1)
