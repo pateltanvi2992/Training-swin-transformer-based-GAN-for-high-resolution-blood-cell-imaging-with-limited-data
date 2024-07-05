@@ -37,11 +37,10 @@ python -m torch.distributed.launch --nproc_per_node=2 train_styleswin.py \
  --checkpoint_path /tmp --sample_path /tmp --size 256 \
  --G_channel_multiplier 2 --bcr --r1 5 --D_lr 0.0002 --D_sn --ttur --val_batch_size 4 --eval_freq 20000  --val_num_batches 600 \
  --eval_gt_path  /real_images_path_to_bloodcell_images_256
-
 ```
 
 ## Results 
-![](imgs/bloodcell.jpg)
+![](imgs/bloodcell.png)
 
 # StyleSwin
 
