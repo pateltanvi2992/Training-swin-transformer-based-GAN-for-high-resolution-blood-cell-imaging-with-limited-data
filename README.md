@@ -11,6 +11,34 @@ Aim: However, training StyleSwin on limited data can lead to discriminator overf
 > Methodology: The original StyleSwin implementation utilized Swin Transformer blocks in the generator and included a style injection mechanism, achieving state-of-the-art results in high-resolution image generation. By incorporating ADA, we have generated high-resolution medical images despite data constraints.
 Results and Conclusion: Medical imaging faces challenges such as the scarcity of high-resolution images, limited data, and artifacts. Our approach using ADA addresses these issues. In this study, we trained StyleSwin with ADA on blood cell images, successfully generating artifact-free, multi-class images. The generated images were evaluated using FID (Fréchet Inception Distance) score to assess image quality. StyleSwin-ADA generated images outperformed on StyleSwin generated images by FID score.  Additionally, multi-variant principal component analysis was employed to evaluate the patterns in the generated images.
 
+## Requirements
+
+To install the dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## Generating image samples with pretrained model
+
+To generate 50k image samples of resolution **256** and evaluate the fid score:
+
+```bash
+python -m torch.distributed.launch --nproc_per_node=1 train_styleswin.py --sample_path /path_to_save_generated_samples --size 256 --G_channel_multiplier 2 --ckpt /path/to/checkpoint --eval --val_num_batches 600 --val_batch_size 4 --eval_gt_path /path_to_real_images
+```
+
+## Training
+
+To train a new model of **bloodcell-256** :
+
+```bash
+python -m torch.distributed.launch --nproc_per_node=2 train_styleswin.py \
+ --batch 4 --path /path_to_bloodcell_images_256 \
+ --checkpoint_path /tmp --sample_path /tmp --size 256 \
+ --G_channel_multiplier 2 --bcr --r1 5 --D_lr 0.0002 --D_sn --ttur --val_batch_size 4 --eval_freq 20000  --val_num_batches 600 \
+ --eval_gt_path  /real_images_path_to_bloodcell_images_256
+
+```
 
 # StyleSwin
 
