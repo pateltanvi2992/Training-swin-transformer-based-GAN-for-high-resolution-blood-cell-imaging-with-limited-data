@@ -2,6 +2,14 @@
 
 This repo is the official implementation of "Training swin transformer-based GAN for high-resolution blood cell imaging with limited data". 
 
+## Abstract
+
+> Background: Generative AI for image-to-image generation delivers state-of-the-art results in various computer vision tasks, often requiring extensive datasets for accurate and high-resolution image synthesis. Recently, StyleSwin, a transformer-based image generative model, has emerged as a strong competitor to convolutional models like StyleGAN in high-resolution image generation. Convolutional models tend to focus on local patterns, neglecting global patterns, whereas StyleSwin captures both, enhancing image quality.
+Aim: However, training StyleSwin on limited data can lead to discriminator overfitting, causing training instability. This issue is particularly relevant for medical data, which is often limited and multi-class. To address this, we propose an adaptive discriminator augmentation (ADA) mechanism for StyleSwin, aiming to stabilize training in data-constrained environments.
+> Methodology: The original StyleSwin implementation utilized Swin Transformer blocks in the generator and included a style injection mechanism, achieving state-of-the-art results in high-resolution image generation. By incorporating ADA, we have generated high-resolution medical images despite data constraints.
+Results and Conclusion: Medical imaging faces challenges such as the scarcity of high-resolution images, limited data, and artifacts. Our approach using ADA addresses these issues. In this study, we trained StyleSwin with ADA on blood cell images, successfully generating artifact-free, multi-class images. The generated images were evaluated using FID (Fréchet Inception Distance) score to assess image quality. StyleSwin-ADA generated images outperformed on StyleSwin generated images by FID score.  Additionally, multi-variant principal component analysis was employed to evaluate the patterns in the generated images.
+
+
 # StyleSwin
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/styleswin-transformer-based-gan-for-high-1/image-generation-on-celeba-hq-1024x1024)](https://paperswithcode.com/sota/image-generation-on-celeba-hq-1024x1024?p=styleswin-transformer-based-gan-for-high-1)
