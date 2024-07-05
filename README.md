@@ -42,6 +42,7 @@ python -m torch.distributed.launch --nproc_per_node=2 train_styleswin.py \
 ## Results 
 ![](imgs/bloodcell.png)
 
+# Reference
 # StyleSwin
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/styleswin-transformer-based-gan-for-high-1/image-generation-on-celeba-hq-1024x1024)](https://paperswithcode.com/sota/image-generation-on-celeba-hq-1024x1024?p=styleswin-transformer-based-gan-for-high-1)
