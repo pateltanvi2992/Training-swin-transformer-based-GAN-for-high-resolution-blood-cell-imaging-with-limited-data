@@ -7,7 +7,6 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/styleswin-transformer-based-gan-for-high-1/image-generation-on-ffhq-1024-x-1024)](https://paperswithcode.com/sota/image-generation-on-ffhq-1024-x-1024?p=styleswin-transformer-based-gan-for-high-1)
 [![WebDemo](https://img.shields.io/badge/%F0%9F%A4%97%20Web%20Demo-Huggingface-blue)](https://huggingface.co/spaces/hysts/StyleSwin)
 
-![Teaser](imgs/teaser.png)
 
 This repo is the official implementation of "[StyleSwin: Transformer-based GAN for High-resolution Image Generation](https://arxiv.org/abs/2112.10762)" (CVPR 2022).
 
