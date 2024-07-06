@@ -50,4 +50,4 @@ Karras, Tero, Miika Aittala, Janne Hellsten, Samuli Laine, Jaakko Lehtinen, and 
 
 ## Acknowledgements
 
-This code borrows heavily from [StyleSwin]([https://github.com/microsoft/StyleSwin]) and [Stylegan2-ada-pytorch]([https://github.com/microsoft/Swin-Transformer]).
+This code borrows heavily from [StyleSwin](https://github.com/microsoft/StyleSwin) and [Stylegan2-ada-pytorch](https://github.com/microsoft/Swin-Transformer).
