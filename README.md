@@ -30,10 +30,10 @@ python -m torch.distributed.launch --nproc_per_node=1 train_styleswin.py --sampl
 ## Training
 ### Data preparing
 
-When training blood cell, we use `ImageFolder` datasets. The data structure is like this:
+When training blood cell dataset, we use `ImageFolder` with bloodsell types datasets. The data structure is like this:
 
 ```
-FFHQ
+basophil
 ├── images
 │  ├── 000001.png
 │  ├── ...
