@@ -44,13 +44,9 @@ python -m torch.distributed.launch --nproc_per_node=2 train_styleswin.py \
 
 ## Reference
 
-```
 Zhang, Bowen, Shuyang Gu, Bo Zhang, Jianmin Bao, Dong Chen, Fang Wen, Yong Wang, and Baining Guo. "Styleswin: Transformer-based gan for high-resolution image generation." In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, pp. 11304-11314. 2022.
-```
-```
-Karras, Tero, Miika Aittala, Janne Hellsten, Samuli Laine, Jaakko Lehtinen, and Timo Aila. "Training generative adversarial networks with limited data." Advances in neural information processing systems 33 (2020): 12104-12114.
-```
 
+Karras, Tero, Miika Aittala, Janne Hellsten, Samuli Laine, Jaakko Lehtinen, and Timo Aila. "Training generative adversarial networks with limited data." Advances in neural information processing systems 33 (2020): 12104-12114.
 
 ## Acknowledgements
 
